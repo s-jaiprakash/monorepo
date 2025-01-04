@@ -1,0 +1,78 @@
+site_name: S. Jai Prakash
+
+repo_name: s-jaiprakash/monorepo
+repo_url: https://github.com/s-jaiprakash/monorepo
+
+theme:
+  name: material
+  locale: en
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/trophy
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      primary: yellow
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default
+      primary: yellow
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to system preference
+  features:
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - navigation.indexes
+    - navigation.path
+    # - navigation.tabs
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.sections
+    - navigation.tracking
+    # - navigation.top # alternatively, we could do navigation.tabs.sticky
+    # - toc.follow
+    # - toc.integrate
+  
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra_css:
+  - style.css
+
+extra:
+  analytics:
+    provider: google
+    property: G-J8G57WHHCQ
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://x.com/iSJaiPrakash
+    - icon: fontawesome/brands/github
+      link: https://github.com/s-jaiprakash
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/s-jaiprakash/
+    - icon: fontawesome/solid/envelope
+      link: mailto:jpsiyyadri@gmail.com
