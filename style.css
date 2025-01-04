@@ -1,0 +1,7 @@
+.md-typeset h1:nth-child(1) {
+    display: none !important;
+}
+
+.md-sidebar__scrollwrap {
+    display: none !important;
+}
