@@ -1,0 +1,24 @@
+name: Deploy MkDocs with Marp
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Marp
+        run: npm install -g @marp-team/marp-cli
+
+      - name: Generate Marp Presentations
+        run: bash convert_marp.sh
+
+      - name: Deploy MkDocs
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: site

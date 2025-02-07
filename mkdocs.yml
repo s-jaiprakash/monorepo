@@ -3,6 +3,19 @@ site_name: S. Jai Prakash
 repo_name: s-jaiprakash/monorepo
 repo_url: https://github.com/s-jaiprakash/monorepo
 
+nav:
+  - Presentations:
+      - Introduction: index.md
+      - workshop:
+          - webscraping:
+              - webscraping_introduction: "slides/workshops/webscraping/webscraping_introduction.html"
+              - get_ready: "slides/workshops/webscraping/get_ready.html"
+              - html_and_css: "slides/workshops/webscraping/html_and_css.html"
+              - webscraping_with_python: "slides/workshops/webscraping/webscraping_with_python.html"
+              - sentiment_analysis: "slides/workshops/webscraping/sentiment_analysis.html"
+              - automation_with_selenium: "slides/workshops/webscraping/automation_with_selenium.html"
+              - final_project: "slides/workshops/webscraping/final_project.html"
+              - wrapup: "slides/workshops/webscraping/wrapup.html"
 theme:
   name: material
   locale: en
@@ -44,7 +57,6 @@ theme:
     # - toc.follow
     # - toc.integrate
   
-
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
